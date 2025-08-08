@@ -144,7 +144,7 @@ export default function App() {
     { id: "/resume.pdf", label: "Resume", icon: DocumentArrowDownIcon },
   ];
 
-  const [state, handleSubmit] = useForm("mgvzpqow");
+  const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_ID);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
